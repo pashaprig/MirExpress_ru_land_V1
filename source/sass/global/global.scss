@@ -50,21 +50,13 @@ button {
   font-weight: 500;
   font-size: 20px;
   line-height: 24px;
-  color: $main-color;
-  background-color: transparent;
-  border: 1px solid $main-color;
-
-  & svg {
-    fill: $main-color;
-  }
+  color: $basic-white;
+  background: $btn-color;
+  border-radius: 50px 0px;
+  border: none;
 
   &:hover {
-    color: $bcg-black;
-    background-color: $main-color;
-
-    svg {
-      fill: $bcg-black;
-    }
+    background: $btn-color-hover;
   }
 
   &:active {

@@ -3,6 +3,11 @@
   margin: 0 auto;
   font-family: "Helvetica Neue", "Arial", sans-serif;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 20px;
+  line-height: 24px;
+
+  @media (max-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
 }

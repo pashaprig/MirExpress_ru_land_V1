@@ -24,25 +24,73 @@
     </picture>
   </header>
   <main class="main">
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
-    <p>Main</p>
+    <section class="promo">
+      <div class="promo__wrapper">
+        <h1 class="promo__heading">Зарабатывайте вместе с МИР Express от&nbsp;300&nbsp;000 рублей в месяц!</h1>
+        <div class="promo__video-bcg">
+          <div class="promo__video">
+            <picture>
+              <source type="image/webp" srcset="img/img/picture.webp">
+              <img class="main__img" src="img/img/picture.jpg" alt="Вертолёт">
+            </picture>
+          </div>
+        </div>
+
+        <div class="promo__form">
+          <style>
+            .form_message.error.inactive {
+              display: none;
+            }
+
+            .form_message.error.active {
+              display: block;
+              color: #0a0a0a;
+            }
+
+            .error {
+              color: #831B1B;
+              border-color: #831B1B !important;
+            }
+
+            label.error {
+              margin-top: -25px;
+              text-align: right;
+              font-weight: 400;
+              font-size: 12px;
+              line-height: 15px;
+            }
+
+            #phone1-error,
+            #phone2-error {
+              display: flex;
+              justify-content: end;
+              margin-top: 5px;
+            }
+          </style>
+          <form action="#" class="form" method="POST" id="leadform1">
+            <h2 class="form__heading heading">Присоединяйтесь к Мир Express и начинайте зарабатывать!</h2>
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+            <input type="email" name="email" id="email" placeholder="Эл. адрес">
+            <input type="tel" name="phone1" placeholder="" id="phone1" />
+            <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+            <input type="hidden" name="currency" value="usd">
+            <input id="country1" type="hidden" name="country" value="ru">
+            <input type="hidden" name="comment" class="comment" value="">
+            <input type="hidden" name="campaign_name" value="">
+            <button class="btn submit_btn" type="submit">
+              <span>Присоединиться</span>
+            </button>
+            <label>
+              <input type="checkbox" name="polycy" checked required>
+              <span class="form__check-label">Я согласен с <a href="#">Пользовательским соглашением</a> и <a href="#">Политикой конфедициальости</a></span>
+            </label>
+            <div class="form_message error inactive"
+              style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
