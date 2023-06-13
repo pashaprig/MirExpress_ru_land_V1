@@ -1,11 +1,8 @@
 .page-header {
   display: flex;
-  background-color: lightblue;
+  padding: 24px 35px;
 
-  @media (min-width: $tablet-width) {
+  @media (max-width: $tablet-width) {
+    padding: 24px 5px;
   }
-}
-
-.daily-pay__icon {
-  fill: white;
 }
