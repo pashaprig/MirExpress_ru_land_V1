@@ -1,0 +1,28 @@
+.garants {
+  display: flex;
+  flex-direction: column;
+  padding: 0 130px 120px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 20px 120px;
+  }
+}
+
+.garants__heading {
+  margin-bottom: 40px;
+
+  @media (max-width: $tablet-width) {
+    padding: 0 35px;
+  }
+}
+
+.garants__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 40px;
+
+  @media (max-width: $tablet-width) {
+    justify-content: center;
+  }
+}
