@@ -1,0 +1,38 @@
+.sahipzadovna {
+  position: relative;
+  padding: 56px 50px;
+  padding-right: 525px;
+  color: $basic-white;
+  background: $bcg-ceo;
+
+  @media (max-width: $tablet-width) {
+    padding: 40px 20px;
+    padding-top: 350px;
+  }
+}
+
+.sahipzadovna__heading {
+  text-align: left;
+  color: $basic-white;
+}
+
+.sahipzadovna__about {
+  margin-bottom: 40px;
+}
+
+.sahipzadovna__btn {
+  max-width: 300px;
+}
+
+.sahipzadovna__img {
+  position: absolute;
+  right: 0;
+  bottom: -50px;
+  max-width: 100%;
+  height: auto;
+
+  @media (max-width: $tablet-width) {
+    top: -60px;
+    bottom: unset;
+  }
+}
