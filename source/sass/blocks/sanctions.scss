@@ -1,0 +1,9 @@
+.sanctions {
+  padding: 120px 198px;
+  text-align: center;
+
+  @media (max-width: $tablet-width) {
+    padding: 60px 20px;
+    text-align: left;
+  }
+}
