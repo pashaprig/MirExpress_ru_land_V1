@@ -1,0 +1,64 @@
+.review {
+  display: flex;
+  flex-direction: column;
+  padding: 120px 135px;
+  padding-bottom: 140px;
+  background: no-repeat 0 100% url("../img/img/review-bcg.webp");
+
+  @media (max-width: $tablet-width) {
+    align-items: center;
+    padding: 60px 20px;
+    padding-bottom: 140px;
+    font-size: 20px;
+    line-height: 24px;
+    background: no-repeat 0 100% url("../img/img/review-bcg-mob.webp");
+  }
+}
+
+.review__about {
+  text-align: center;
+  margin-bottom: 40px;
+  padding: 0 150px;
+
+  @media (max-width: $tablet-width) {
+    text-align: left;
+    padding: 0;
+
+  }
+}
+
+.review__card {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  max-width: 310px;
+  max-height: 360px;
+  padding: 25px 42px 16px;
+  background: $basic-white;
+  box-shadow: 0px 4px 4px rgba(174, 161, 161, 0.25);
+  border-radius: 15px;
+}
+
+.review__avatae-wrapper {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.review__name-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  cite {
+    font-style: normal;
+  }
+}
+
+.review__img {
+  border-radius: 50%;
+}
+
+.review__blockquote {
+  margin-bottom: 40px;
+}
