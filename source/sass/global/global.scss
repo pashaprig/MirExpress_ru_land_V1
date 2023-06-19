@@ -97,3 +97,9 @@ button {
     line-height: 29px;
   }
 }
+
+.desktop-only {
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
