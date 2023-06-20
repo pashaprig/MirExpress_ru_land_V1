@@ -1,15 +1,23 @@
 class App {
+
   init() {
     this.initSlider();
     this.afterVideoPlay();
+    this.onButtonPlay();
+  }
+
+  constructor() {
+    this.iframe = document.querySelector('iframe');
+    this.player = new Vimeo.Player(this.iframe);
+    this.btnPlay = document.querySelector('#button-play')
   }
 
   initSlider() {
-    $(function(){
+    $(function () {
       $('.slider').slick({
         arrows: false,
         slidesToShow: 3,
-        responsive : [
+        responsive: [
           {
             breakpoint: 1024,
             settings: {
@@ -30,16 +38,23 @@ class App {
   }
 
   afterVideoPlay() {
-    const iframe = document.querySelector('iframe');
-    const player = new Vimeo.Player(iframe);
-
     const vidoWrapper = document.querySelector('.promo__video')
 
     const onPlay = () => {
       vidoWrapper.style.borderRadius = 'unset';
+      this.btnPlay.style.display = 'none'
     };
 
-    player.on('play', onPlay);
+    this.player.on('play', onPlay);
+  }
+
+  onButtonPlay() {
+    const playVideo = () => {
+      this.player.play()
+      this.btnPlay.style.display = 'none'
+    }
+
+    this.btnPlay.addEventListener('click', playVideo);
   }
 }
 

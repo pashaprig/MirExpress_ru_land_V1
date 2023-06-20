@@ -115,6 +115,33 @@
   overflow: hidden;
   border-radius: 800px 0 800px 0;
 
+  button {
+    z-index: 3;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0;
+    width: 80px;
+    height: 80px;
+    background: $bcg-ceo;
+    border-radius: 50%;
+
+    svg {
+      margin-left: 8px;
+      fill: $basic-white;
+    }
+
+    &:hover {
+      svg {
+        fill: $main-color;
+      }
+    }
+  }
+
   @media (max-width: $tablet-width) {
     border-radius: 0;
   }
