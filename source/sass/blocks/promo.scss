@@ -31,7 +31,7 @@
       padding: 16px 33px;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         no-repeat url("../img/img/promo-bottom-bcg-mob.webp");
-        background-size: cover;
+      background-size: cover;
 
       .promo__wrapper {
         gap: 16px;
@@ -84,18 +84,38 @@
 }
 
 .promo__video-bcg {
-  overflow: hidden;
+  position: relative;
   width: 65%;
   padding-top: 60px;
-  border-radius: 800px 0 800px 0;
-
-  & img {
-    width: 100%;
-  }
 
   @media (max-width: $tablet-width) {
     width: 100%;
     padding-top: 0;
+  }
+}
+
+.promo__leaf {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  bottom: -30px;
+  width: 350px;
+  height: 482px;
+  background: no-repeat 100% 100% url("../img/img/video-bcg.webp");
+  transform: rotate(10deg);
+
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.promo__video {
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  border-radius: 800px 0 800px 0;
+
+  @media (max-width: $tablet-width) {
     border-radius: 0;
   }
 }

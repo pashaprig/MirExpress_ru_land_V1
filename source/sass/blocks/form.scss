@@ -1,7 +1,9 @@
 .form {
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  height: 100%;
   padding: 24px 15px;
   background: $basic-white;
   border-radius: 10px;

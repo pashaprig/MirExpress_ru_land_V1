@@ -33,13 +33,14 @@
           <div class="promo__video">
             <div style="padding:56.25% 0 0 0;position:relative;">
               <iframe
-                src="https://player.vimeo.com/video/833805934?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
+                src="https://player.vimeo.com/video/833805934?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479&loop=1"
                 frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen
                 style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Yandex_land">
               </iframe>
             </div>
             <script src="https://player.vimeo.com/api/player.js"></script>
           </div>
+          <div class="promo__leaf"></div>
         </div>
 
         <div class="promo__form">
@@ -88,8 +89,8 @@
             </button>
             <label>
               <input type="checkbox" name="polycy" checked required>
-              <span class="form__check-label">Я согласен с <a href="#">Пользовательским соглашением</a> и&nbsp;<a
-                  href="#">Политикой конфедициальости</a></span>
+              <span class="form__check-label">Я согласен с <a href="#leadform1">Пользовательским соглашением</a> и&nbsp;<a
+                  href="#leadform1">Политикой конфедициальости</a></span>
             </label>
             <div class="form_message error inactive"
               style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
@@ -196,7 +197,7 @@
       </picture>
     </section>
 
-    <srction class="review">
+    <section class="review">
       <h2 class="review__heading heading">Отзывы участников программы</h2>
       <p class="review__about">Каждый день к проекту Мир Express присоединяются десятки людей со всего мира. Они с
         удовольствием делятся результатами своего заработка, ведь он намного выше средней зарплаты в Европе!</p>
@@ -247,7 +248,7 @@
           <p class="review__time">7:34 PM | May 06,2021</p>
         </div>
       </div>
-    </srction>
+    </section>
 
     <section class="sanctions">
       <h2 class="sanctions__heading heading">Санкции нам не страшны!</h2>
@@ -263,14 +264,14 @@
           высокий заработок!</h1>
 
         <div class="promo__form">
-          <form action="#" class="form" method="POST" id="leadform1">
+          <form action="#" class="form" method="POST" id="leadform2">
             <h2 class="form__heading heading">Присоединяйтесь к Мир&nbsp;Express и&nbsp;начинайте зарабатывать!</h2>
-            <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-            <input type="email" name="email" id="email" placeholder="Эл. адрес">
-            <input type="tel" name="phone1" placeholder="" id="phone1" />
-            <input id="realPhone1" class="hidden-phone" type="hidden" name="phone" value="" />
+            <input type="text" name="name" id="name2" placeholder="Имя Фамилия">
+            <input type="email" name="email" id="email2" placeholder="Эл. адрес">
+            <input type="tel" name="phone2" placeholder="" id="phone2" />
+            <input id="realPhone2" class="hidden-phone" type="hidden" name="phone" value="" />
             <input type="hidden" name="currency" value="usd">
-            <input id="country1" type="hidden" name="country" value="ru">
+            <input id="country2" type="hidden" name="country" value="ru">
             <input type="hidden" name="comment" class="comment" value="">
             <input type="hidden" name="campaign_name" value="">
             <button class="btn submit_btn" type="submit">
@@ -278,8 +279,8 @@
             </button>
             <label>
               <input type="checkbox" name="polycy" checked required>
-              <span class="form__check-label">Я согласен с <a href="#">Пользовательским соглашением</a> и&nbsp;<a
-                  href="#">Политикой конфедициальости</a></span>
+              <span class="form__check-label">Я согласен с <a href="#leadform1">Пользовательским соглашением</a> и&nbsp;<a
+                  href="#leadform1">Политикой конфедициальости</a></span>
             </label>
             <div class="form_message error inactive"
               style="margin:15px 0;background-color: #ffd4d4;border: 2px dashed #ce0909;border-radius: 10px;padding: 20px;max-width: 350px;">
@@ -301,10 +302,10 @@
     <div class="page-footer__bottom">
       <ul class="page-footer__list">
         <li class="page-footer__item">
-          <a href="#">Политика конфиденциальности</a>
+          <a href="#leadform1">Политика конфиденциальности</a>
         </li>
         <li class="page-footer__item">
-          <a href="#">Пользовательское соглашение</a>
+          <a href="#leadform1">Пользовательское соглашение</a>
         </li>
       </ul>
     </div>

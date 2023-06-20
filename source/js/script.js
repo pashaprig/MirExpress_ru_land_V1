@@ -1,8 +1,8 @@
 class App {
   init() {
     this.initSlider();
+    this.afterVideoPlay();
   }
-
 
   initSlider() {
     $(function(){
@@ -27,6 +27,19 @@ class App {
         ]
       });
     })
+  }
+
+  afterVideoPlay() {
+    const iframe = document.querySelector('iframe');
+    const player = new Vimeo.Player(iframe);
+
+    const vidoWrapper = document.querySelector('.promo__video')
+
+    const onPlay = () => {
+      vidoWrapper.style.borderRadius = 'unset';
+    };
+
+    player.on('play', onPlay);
   }
 }
 
